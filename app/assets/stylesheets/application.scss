@@ -15,3 +15,20 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar {
+    background-color:white;
+    opacity: 0.9;
+    z-index : 1;
+}
+body {
+    background-color:#e9eeee;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    
+}
+.jumbotron {
+    background-color:white;
+}
