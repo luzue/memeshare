@@ -1,0 +1,95 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<% if !user_signed_in? %>
+<style>
+    body {
+        background: linear-gradient(
+        rgba(0,0,0, 0.7),
+        rgba(0,0,0, 0.7)
+        ),
+        
+        url('/fuckyes.jpg') no-repeat center center fixed;
+        
+        
+        
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size:cover;
+        background-size:cover;
+        
+        linear-gradient(
+        rgba(0,0,0, 0.7),
+        rgba(0,0,0, 0.7)
+        );
+        
+    }
+    h1 {
+        color:white;
+        font-size:-3;
+    }
+    
+    .log-in {
+        
+        width:250px;
+        height:150px;
+        opacity: 0.9;
+    }
+    .sign-up {
+         width:250px;
+         height:250px;
+         opacity: 0.9;
+    }
+    #logo {
+       left:-20px;
+    }
+</style>
+<div class="container-index row"><div>
+    
+    <div class="col-sm-6">
+        <center>
+            <div class="log-in panel">
+            <h2><%= link_to('Sign In', new_user_session_path) %></h2>
+            <p>Already have an account? Sign In!</p>
+
+
+            </div>
+        </center>
+         <center>
+            <div class="sign-up panel">
+            <h2><%= render 'views/registration/new'</h2>
+            <p>Don't have an account? Sign Up!</p>
+
+
+
+
+            </div>
+        </center>
+    </div>
+    
+    <div class="col-sm-3">
+        <center>
+            <img src="/memeshare1.png" id="logo" width="250" height="100px"></img>
+        </center>
+    
+    </div>
+    
+    <div class="col-sm-12">
+        <center>
+            <p class=" footer-links"><a href="https://www.google.com/#q=memeshare" target="_blank">About</a> <a href="https://www.google.com/#q=help" target="_blank">Help</a> <a href="https://www.google.com/#q=blog" target="_blank">Blog</a> <a href="https://www.google.com/#q=status" target="_blank">Status</a> <a href="https://www.google.com/#q=jobs" target="_blank">Jobs</a> <a href="https://www.google.com/#q=status" target="_blank">Terms</a> <a href="https://www.google.com/#q=privacy" target="_blank">Privacy</a> <a href="https://www.google.com/#q=cookies" target="_blank">Cookies</a> <a href="https://www.google.com/#q=ads" target="_blank">Ads</a> <a href="https://www.google.com/#q=info" target="_blank">Info</a> <a href="https://www.google.com/#q=brand" target="_blank">Brand</a> <a href="https://www.google.com/#q=advertise" target="_blank">Advertise</a> <a href="https://www.google.com/#q=businesses" target="_blank">Businesses</a> <a href="https://www.google.com/#q=media" target="_blank">Media</a> <a href="https://www.google.com/#q=Developers" target="_blank">Developers</a> <a href="https://www.google.com/#q=corndogs" target="_blank">© 2016 MemeShare</a>
+            </p>
+        </center>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<% else %>
+
+<meta http-equiv="refresh" content="0; URL='/home'" />
+
+<% end %>
